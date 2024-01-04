@@ -1,0 +1,149 @@
+.firstPartOfferComponent{
+    background-color: var(--light);
+    display:flex;
+    margin: 60px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textOffer{
+    width: 40%;
+    padding:70px;
+    font-size: 20px;
+    line-height: 2em;
+    text-align: center;
+}
+
+.offer-cakes-monoportions{
+    width: 60%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:60px;
+    
+}
+.cakes{
+    background: url('./../../media/cake_offer.webp');
+}
+.monoportions{
+    background: url('./../../media/monoportion_offer.webp');
+}
+
+.offerBox{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0px 11px 28px -17px rgba(109, 109, 117, 1);
+}
+
+.offer-cakes-monoportions a:first-child{
+    transform:translateY(-60px)
+}
+
+.offer-cakes-monoportions a:last-child{
+    transform:translateY(60px)
+}
+.offer{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+.offer:hover{
+    transform: scale(1.15);
+}
+.offer p{
+    font-size: 30px;
+    color: #faf7f0;
+    cursor: pointer;
+    z-index:2;
+}
+
+.offer-cakes-monoportions a{
+    text-decoration: none;
+}
+
+.offer::after{
+    content: '';
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: rgb(0,0,0,0.4);
+    z-index: 1;
+}
+
+@media screen and (max-width:1200px) {
+    .textOffer{
+        font-size: 18px;
+    }
+    .offer-cakes-monoportions{
+        padding:10px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .textOffer{
+        padding: 30px;
+    }
+    .offerBox{
+        height: 250px;
+        width: 250px;
+    }
+    .offer p{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:900px){
+    .firstPartOfferComponent{
+        margin: 50px 0px 0px 0px;
+    }
+    .textOffer{
+        padding: 30px 30px 30px 60px;
+        font-size: 16px;
+        width:60%;
+    }
+    .offer-cakes-monoportions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+        width:40%
+    }
+    .offer-cakes-monoportions a:first-child{
+        transform:translateY(-10px)
+    }
+    
+    .offer-cakes-monoportions a:last-child{
+        transform:translateY(10px)
+    }
+    .offerBox{
+        height: 200px;
+        width: 200px;
+    }
+    .offer:hover{
+        transform: scale(1.2);
+    }
+    .offer p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .firstPartOfferComponent{
+        margin: 40px 0px 0px 0px;
+    }
+    .textOffer{
+        width: 100%;
+    }
+    .offer-cakes-monoportions{
+        display:none;
+    }
+}

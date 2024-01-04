@@ -1,0 +1,59 @@
+.divLoginForm{
+    display:flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;  
+}
+
+.loginForm{
+    display:flex;
+    flex-direction: column; 
+    padding: 5em; 
+    border: 2px solid white;
+}
+.loginForm h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.loginForm label{
+    text-align: left;
+    padding-top: 30px;
+}
+
+.loginForm input{
+    background: none;
+    border-bottom: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    line-height: 3em;
+    width: 250px;
+}
+.loginForm input::placeholder{
+    color: rgba(130, 109, 83, 0.6);
+    font-family: 'Cinzel', serif;
+}
+
+.loginForm button{
+    width: 150px;
+    padding: 10px;
+    font-family: 'Cinzel', serif;
+    margin-top: 20px;
+    background-color: transparent;
+    transition: all 0.5s;
+    border: 1px solid;
+    letter-spacing: 0.15em;
+}
+.loginForm button:hover{
+    cursor:pointer;
+    background-color: rgba(212, 185, 144, 0.5);
+    
+}
+
+.error{
+    line-height: 1cm;
+    color:red;
+    font-size: 13px;
+}

@@ -1,0 +1,26 @@
+.errorPageContainer{
+    width:100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+.errorPageContainer p{
+    font-size: 30px;
+    color:red;
+    text-align: center;
+}
+.errorPageContainer img{
+    height: 300px;
+}
+
+@media screen and (max-width: 960px) {
+    .errorPageContainer p{
+        font-size: 20px;
+    }
+    .errorPageContainer img{
+        height: 150px;
+    }
+}

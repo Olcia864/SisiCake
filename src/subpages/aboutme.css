@@ -1,0 +1,59 @@
+.container{
+    letter-spacing: 0.08em;
+    line-height: 1.9em;
+    
+}
+.containerAboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    
+}
+
+.myPicture{
+    width: 30%;
+    margin:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.myPicture img{
+    width:220px;
+    height:319px;
+    object-fit:cover;
+    
+}
+
+.textAboutMe{
+    padding: 50px 50px 50px 0px;
+    text-align: center;
+}
+
+.textAboutMe p{
+    padding: 10px;
+}
+
+.footerAboutMe{
+    padding: 50px;
+    text-align: center;
+    background-color: var(--dark);
+}
+@media screen and (max-width: 960px) {
+    .container{
+        font-size: 12px;
+    }
+    .containerAboutMe{
+        flex-direction: column-reverse;
+    }
+    .myPicture img{
+        width:150px;
+        height:217px;
+    }
+    .textAboutMe{
+        padding: 50px 50px 50px 50px;
+    }
+
+}

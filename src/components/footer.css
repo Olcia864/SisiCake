@@ -1,0 +1,119 @@
+
+footer{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    padding:20px 30px 20px 30px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 0.5em;
+    letter-spacing: 0.2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer p{
+    padding:13px;
+}
+
+/* góra stopki */
+
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* tel/mail */
+
+    .telIcon, .mailIcon{
+        margin-right:7px;
+    }
+
+    .contactFooter p:last-child{
+        font-family:'Cormorant Infant', serif;
+    }
+
+    /* insta/fb */
+
+    .contactIcon{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact{
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: transform 0.25s;
+        background-color:var(--dark);
+        color:black;
+        margin-left: 8px;
+    }
+
+    .contact:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .insta:hover{
+        color:#fff;
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    }
+
+    .fb:hover{
+        color: white;
+        background-color:#3b5998;
+    }
+
+/* dół stopki */
+
+.down{
+    text-align: center;
+    margin-top: 15px;
+    border-top: solid thin #58534b;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 960px) {
+    footer{
+        padding:15px 10px 10px 10px;
+        font-size: 10px;
+        /* line-height: 1em; */
+        letter-spacing: 0.1em;
+    }
+    .telIcon, .mailIcon{
+        margin-right:4px;
+    }
+    .contact{
+        margin-left:1px;
+    }
+    .down{
+        font-size:10px;
+    }
+ 
+}
+
+@media screen and (max-width: 400px){
+    footer{
+        font-size:9px;
+        line-height: 1em;
+    }
+    footer p{
+        padding: 8px;
+    }
+    .contact{
+        transform: scale(0.7);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .down{
+        font-size:8px;
+        
+    }
+}

@@ -1,0 +1,130 @@
+.sectionNewsletter{
+    display: flex;
+    /* font-family: 'Cinzel', serif; */
+    font-size: 20px;
+    padding:60px;
+    text-align:center;
+    line-height: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nagłówek */
+.newsletterDiv{
+    padding:30px;
+}
+
+/* formularz */
+.newsletterForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletterForm label{
+    margin-top: 30px;
+    font-size: 16px;
+}
+.newsletterForm input{
+    background-color: var(--light);
+    border-bottom: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 300px;
+    height:40px;
+    padding-left: 10px;
+}
+.newsletterForm input::placeholder{
+    color: rgba(130, 109, 83, 0.6);
+    font-family: 'Cinzel', serif;
+}
+.newsletterForm button{
+    padding: 10px;
+    font-family: 'Cinzel', serif;
+    margin-top: 20px;
+    background-color: var(--light);
+    transition: all 0.5s;
+    border: 1px solid;
+    letter-spacing: 0.15em;
+}
+.newsletterForm button:hover{
+    cursor:pointer;
+    /* background-color: rgba(244, 225, 202, 0.6); */
+    background-color: rgba(212, 185, 144, 0.5);
+}
+.sending{
+    width: 150px;
+    border: 1px solid;
+    letter-spacing: 0.15em;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.errorNewsletter{
+    color:red;
+    font-size: 0.8em;
+    font-family: 'Cormorant Infant', serif;
+}
+
+/* kafelek o zniżce */
+.newsletterDivDiscount{
+    width:400px;
+    height: 400px;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+    padding:50px;
+    position: relative;
+    box-shadow: 0px 11px 28px -17px rgba(109, 109, 117, 1);
+}
+
+.newsletterDivDiscount::before{
+    content: '';
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    border: 1.5px solid rgb(255, 255, 255);
+    transform:translateZ(30px);
+}
+
+@media screen and (max-width: 960px){
+    .sectionNewsletter{
+        font-size:15px;
+        padding:15px;
+    }
+    .newsletterDiv{
+        padding: 15px;
+    }
+    .newsletterForm label{
+        font-size: 15px;
+    }
+    .newsletterDivDiscount{
+        height: 300px;
+        margin: 10px 0px;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .sectionNewsletter{
+        font-size:12px;
+        padding:10px;
+        flex-direction: column;
+    }
+    .newsletterForm label{
+        font-size: 12px;
+    }
+    .newsletterForm button{
+        font-size: 0.8em;
+    }
+    .newsletterDivDiscount{
+        width:200px;
+        height: 200px;
+    }
+}

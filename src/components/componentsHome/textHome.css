@@ -1,0 +1,40 @@
+.textHomeContainer{
+    display: flex;
+    text-align: center;
+    padding: 80px 0px 0px 80px;
+    line-height: 1.9em;
+    border-bottom: 1px solid;
+    align-items: flex-end;
+}
+.textHome{
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+
+.textHome p{
+    padding-bottom: 15px;
+}
+
+.logoTextHome{
+    height: 300px;
+}
+
+.logoTextHome img{
+    height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .textHomeContainer{
+        padding: 40px 0px 0px 40px;
+        font-size: 14px;
+    }
+    .logoTextHome{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logoTextHome{
+        display:none;
+    }
+}
